@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 8px;
+  background-color: darkgray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(31, 30, 30);
+}
+.input {
+  height: 40px;
+  border-radius: 3px;
+  outline: transparent;
+  border: 2px solid lightcyan;
+  &:hover {
+    border-color: lightgreen;
+  }
+}

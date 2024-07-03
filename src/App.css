@@ -1,0 +1,5 @@
+.input_wraps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
