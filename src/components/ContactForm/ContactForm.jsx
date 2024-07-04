@@ -41,7 +41,12 @@ export const ContactForm = () => {
         <label className={s.label} htmlFor={nameId}>
           Name
         </label>
-        <Field type="text" name="name" className={s.input} />
+        <Field
+          type="text"
+          name="name"
+          className={s.input}
+          placeholder="Enter name..."
+        />
         <ErrorMessage
           name="name"
           component="span"
@@ -51,7 +56,12 @@ export const ContactForm = () => {
         <label className={s.label} htmlFor={emailId}>
           Number
         </label>
-        <Field type="text" name="number" className={s.input} />
+        <Field
+          type="text"
+          name="number"
+          className={s.input}
+          placeholder="Enter number..."
+        />
         <ErrorMessage
           name="number"
           component="span"

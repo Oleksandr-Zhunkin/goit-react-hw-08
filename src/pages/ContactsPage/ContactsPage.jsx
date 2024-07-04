@@ -18,7 +18,9 @@ const ContactsPage = () => {
 
   return (
     <div>
-      <h1 className="title">Phonebook</h1>
+      <h1 className="text-4xl mb-10 text-center font-bold text-blue-950">
+        Phonebook
+      </h1>
       <div className="input_wraps">
         <ContactForm />
         <SearchBox />
