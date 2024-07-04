@@ -3,9 +3,6 @@ import s from "../ContactForm/ContactForm.module.scss";
 import { useId } from "react";
 import { contactSchema } from "../../schema/contactSchema";
 import { useDispatch, useSelector } from "react-redux";
-
-import { nanoid } from "nanoid";
-
 import { selectContacts } from "../../redux/contacts/selectors";
 import { addContact } from "../../redux/contacts/operations";
 
