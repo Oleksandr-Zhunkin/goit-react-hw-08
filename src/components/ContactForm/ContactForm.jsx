@@ -3,10 +3,11 @@ import s from "../ContactForm/ContactForm.module.scss";
 import { useId } from "react";
 import { contactSchema } from "../../schema/contactSchema";
 import { useDispatch, useSelector } from "react-redux";
-import { selectContacts } from "../../redux/contactsSlice";
 
 import { nanoid } from "nanoid";
-import { addContact } from "../../redux/contactsOps";
+
+import { selectContacts } from "../../redux/contacts/selectors";
+import { addContact } from "../../redux/contacts/operations";
 
 export const ContactForm = () => {
   const nameId = useId();
@@ -18,10 +19,8 @@ export const ContactForm = () => {
 
   const handleSubmit = (value, actions) => {
     const action = addContact({
-      id: nanoid(),
       name: value.name,
       number: value.number,
-      createdAt: Date.now(),
     });
 
     dispatch(action);

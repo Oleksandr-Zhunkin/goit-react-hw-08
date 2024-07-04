@@ -11,7 +11,7 @@ export const contactSchema = (contacts) =>
       .matches(nameRegExp, "Name must consist only english of letters!")
       .required("Name is required!")
       .test("unique-name", "this name already exists!", function (value) {
-        return !contacts.find(
+        return !contacts?.find(
           (contact) => contact.name.toLowerCase() === value.toLowerCase()
         );
       }),
@@ -21,6 +21,6 @@ export const contactSchema = (contacts) =>
       .matches(phoneRegExp, "Phone number is not valid!")
       .required("Phone is required!")
       .test("unique-number", "this number already exists!", function (value) {
-        return !contacts.find((contact) => contact.number === value);
+        return !contacts?.find((contact) => contact.number === value);
       }),
   });
