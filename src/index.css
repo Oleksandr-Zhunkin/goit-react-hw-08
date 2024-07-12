@@ -35,3 +35,6 @@ img {
   text-align: center;
   margin-bottom: 30px;
 }
+input {
+  background-color: transparent;
+}
